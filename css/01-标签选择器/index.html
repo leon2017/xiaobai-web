@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            background-color: orange;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 19px
+        }
+
+        p {
+            color: rebeccapurple;
+        }
+
+        #p2 {
+            color: brown;
+        }
+
+        .p3 {
+            color: aqua;
+            font-style: italic;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        /** 后代选择器 **/
+        div ul li {
+            background-color: royalblue
+        }
+        
+        .box li {
+            background-color: skyblue
+        }
+        p.demo {
+            text-decoration: underline
+        }
+        div.demo {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>我是标签</h2>
+        <p>大王叫我来巡山</p>
+        <p id="p2">css是层叠样式表</p>
+        <p class="p3">我是类选择器</p>
+        <p class="p3">我是类选择器2</p>
+    </div>
+
+    <div>
+        <p class="demo">
+            此夜曲中闻折柳
+        </p>
+        <div class="demo">
+            何人不起故园情
+        </div>
+    </div>
+
+    <div>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+        </ul>
+        <div class="box">
+            <ul>
+                <li>文字</li>
+                <li>文字</li>
+                <li>文字</li>
+                <li>文字</li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <p>哈哈哈</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>哈哈哈</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
